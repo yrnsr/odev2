@@ -19,12 +19,6 @@ body{
       text-align: center;    
   }
   
-  .ekran{
-      margin: 10px;
-      width: 200px;
-      height: 40px;
-  }
-  
   .button-container{
       gap: 10px;
       display: flex;        
