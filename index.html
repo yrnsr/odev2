@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Hesap Makinesi</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="box">
+        <div class="baslik">HESAP MAKİNESİ</div>
+        <input class="sonucalani" id="sayi1" type="number"/>
+        <input class="sonucalani" id="sayi2" type="number"/>
+        <div class="button-container">
+        <button class="button" onclick="hesapla('+')">Topla</button>
+        <button class="button" onclick="hesapla('-')">Çıkar</button>
+        <button class="button" onclick="hesapla('*')">Çarp</button>
+        <button class="button" onclick="hesapla('/')">Böl</button>
+        </div>
+        <div class="sonucalani" id="sonuc">Sonuç Alanı</div>
+        <script>
+            var sayi1 = document.getElementById("sayi1");
+            var sayi2 = document.getElementById("sayi2");
+            var sonuc = document.getElementById("sonuc");
+
+            function hesapla(type){
+                var sonucText = "";
+
+                if(type === '/' && Number(sayi2.value) === 0){
+                    sonucText = "HATA: Sıfıra bölme yapılamaz!";
+                }else{
+
+                switch(type){
+
+                    case "+":
+                        sonucText = Number(sayi1.value) + Number(sayi2.value);
+                        break;
+                    case "-":
+                        sonucText = Number(sayi1.value) - Number(sayi2.value);
+                        break;
+                    case "*":
+                        sonucText = Number(sayi1.value) * Number(sayi2.value);
+                        break;
+                    case "/":
+                        sonucText = Number(sayi1.value) / Number(sayi2.value);
+                        break;
+                    }       
+                }
+                sonuc.innerHTML = sonucText;
+            }
+        </script>
+        </div>
+    </body>
+</html>

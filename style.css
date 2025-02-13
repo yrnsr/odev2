@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;      
+  }
+  
+  .box{
+      width: 350px;
+      height: 300px;
+      border-radius: 5px;
+      background: rgb(241, 241, 241);
+  }
+  
+  .baslik{
+      margin-top: 8px;
+      font-size: 20px;
+      text-align: center;    
+  }
+  
+  .ekran{
+      margin: 10px;
+      width: 200px;
+      height: 40px;
+  }
+  
+  .button-container{
+      gap: 10px;
+      display: flex;        
+      margin-left: 7px;
+      margin-top: 10px;
+  }
+  
+  .button{
+      border: none;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      padding: 10px 20px;
+      border-radius: 5px;
+      background-color: rgb(167, 123, 183);
+  }
+  
+  .button:hover{
+      background-color: rgb(189, 142, 210);
+  }
+  
+  .sonucalani{
+      margin: 10px;
+      width: 200px;
+      height: 40px;
+      font-size: 18px;
+      text-align: center;
+      border-radius: 10px;    
+      background-color: #f9f9f9;
+      border: 2px solid rgb(167, 123, 183);
+  }
+  
